@@ -1,7 +1,8 @@
-//////////////////////////////////// 
-//   Trains Hiding+Stealth		  // 
-//   ~~Made by Applejuice~~ 	  // 
-//////////////////////////////////// 
+//FOCUS:  Trains Hiding+Stealth
+//SETUP:  None
+//AUTHOR: Applejuice (3HMonkey) 
+//DESCRIPTION: Trains stealthing in
+//a dungeon
 while not dead and skill 'hiding' < 80
   useskill 'hiding'
   pause 11000

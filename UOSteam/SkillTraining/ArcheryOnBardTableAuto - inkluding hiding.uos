@@ -1,9 +1,10 @@
-//=============================
-//Author: Applejuice (3HMonkey)
-//Description: Trains your archery
-//from 0 to 120 fast. If there is
-//no enemy around it will train
-//hiding to GM
+//FOCUS:  Trains Archery + Hiding
+//SETUP:  Stand on bard table
+//AUTHOR: Applejuice (3HMonkey) 
+//DESCRIPTION: Trains archery while
+//attacking the closest target. If 
+//there is no target to attack, it 
+//trains hiding.
 @Getenemy 'murderer' 'Enemy' 'criminal' 'gray' 'closest'
 if @findobject 'enemy'
   autotargetobject! 'enemy'

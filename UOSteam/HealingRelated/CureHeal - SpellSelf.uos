@@ -1,0 +1,13 @@
+//FOCUS:  Cure & Heal with spell
+//SETUP:  None
+//AUTHOR: Applejuice (3HMonkey) 
+//DESCRIPTION: Use spell cure if
+//poisoned and heal if damaged on
+//yourself
+if poisoned 'self'
+  cast "Cure"
+  target 'self'
+endif
+if diffhits >= 20
+  miniheal 'self'
+endif
