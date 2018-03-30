@@ -1,0 +1,34 @@
+//////////////////////////////////// 
+//   Trains Hiding+Stealth		  // 
+//   ~~Made by Applejuice~~ 	  // 
+//////////////////////////////////// 
+while not dead and skill 'hiding' < 80
+  useskill 'hiding'
+  pause 11000
+endwhile
+while not dead and skill 'stealth' < 100
+  while not hidden
+    pause 11000
+    useskill 'hiding'
+  endwhile
+  useskill 'stealt'
+  pause 300
+  walk "North"
+  walk "North"
+  walk "North"
+  walk "North"
+  walk "North"
+  walk "North"
+  pause 300
+  walk "South"
+  walk "South"
+  walk "South"
+  walk "South"
+  walk "South"
+  walk "South"
+  pause 300
+endwhile
+while not dead and skill 'hiding' < 100
+  useskill 'hiding'
+  pause 11000
+endwhile
