@@ -1,0 +1,17 @@
+//=============================
+//Author: Applejuice (3HMonkey)
+//Description: Trains your archery
+//from 0 to 120 fast. If there is
+//no enemy around it will train
+//hiding to GM
+@Getenemy 'murderer' 'Enemy' 'criminal' 'gray' 'closest'
+if @findobject 'enemy'
+  autotargetobject! 'enemy'
+  attack! 'enemy'
+endif
+if skill 'hiding' < 100
+  useskill 'hiding'
+  pause 11000
+endif
+@clearusequeue
+@cancelautotarget

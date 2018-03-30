@@ -1,0 +1,11 @@
+//=============================
+//Author: Applejuice (3HMonkey)
+//Description: Trains your archery
+//from 0 to 120 fast.
+@Getenemy 'murderer' 'Enemy' 'criminal' 'gray' 'closest'
+if @findobject 'enemy'
+  autotargetobject! 'enemy'
+  attack! 'enemy'
+endif
+@clearusequeue
+@cancelautotarget
